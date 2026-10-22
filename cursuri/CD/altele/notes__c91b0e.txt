@@ -1,0 +1,26 @@
+Part1. Simple examples:
+
+01: Access modifiers vs class relations
+02: Stativ cs inheritance
+03: Super
+04: Inheritance breaks encapsulation
+05: Reference type vs run-time type
+
+Java Modifier Types documentation:
+- https://www.tutorialspoint.com/java/java_modifier_types.htm
+
+Java Modifier Types examples:
+- https://docs.oracle.com/javase/tutorial/reflect/class/classModifiers.html
+
+Java Delegation examples:
+- https://stackoverflow.com/questions/2989005/delegation-example-regarding-java-context
+
+
+Part2. UML
+- generare UML din cod în IntelliJ
+https://www.jetbrains.com/help/idea/class-diagram.html
+- generare cod din UML în VP
+https://www.visual-paradigm.com/support/documents/vpuserguide/276/381/7486_generateorup.html
+
+
+

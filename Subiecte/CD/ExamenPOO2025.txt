@@ -1,0 +1,262 @@
+Examen Practic 2025CV SCANNER
+
+Primim la input o serie de CV-uri de la studenti. Acestea sunt organizate dupa un format standard, cu mentiunea ca 
+rubricile Internship, Concurs si Proiect pot sa aiba mai multe intrari sau sa lipseasca cu totul,
+in functie de palmaresul studentului:
+
+CV: <Nume> <Prenume>
+Internship: <Nume institutie>, <Tehnologie>
+Concurs: <Nume concurs>, <Numar total participanti>, <Locul obtinut>
+Proiect: <Nume proiect>, <Tehnologie>
+Ne dorim un sistem care sa ne ofere eficient o serie de statistici:
+
+Concursuri: <o lista de concursuri sortate descrescator dupa numarul de studenti din lista noastra care au participat; 
+daca doua concursuri au acelasi numar de studenti din lista noastra care au participat, atunci vor aparea in ordine alfabetica>
+
+Tehnologii: <o lista de tehnologii sortate descrescator dupa numarul de internships si de proiecte in care au fost folosite; 
+daca doua tehnologii au acelasi numar de aparitii, atunci vor fi afisate in ordine alfabetica>
+
+Achievers: <o lista de studenti care au CV cu cel putin 10 rubrici sau au cel putin un concurs in care s-au clasat 
+in primii 10% din numarul total de participanti, in ordine alfabetica>
+
+Pentru punctaj maxim, tratati situatiile exceptionale.
+Daca o linie din input are un format eronat, afisati mesajul de eroare corespunzator,
+impreuna cu linia care a generat exceptia, dar acest lucru nu ar trebui sa afecteze procesarea celorlalte linii:
+
+java.lang.IllegalArgumentException: nume sectiune necunoscut la linia '<linie>'
+java.lang.IllegalArgumentException: numar de parametrii invalid la linia '<linie>'
+java.lang.NumberFormatException: For input string: "<Numar total participanti sau locul obtinut>" la linia '<linie>'
+Hints:
+
+Fiecare internship si fiecare proiect are asociata o singura tehnologie.
+Pentru a afisa exceptiile din catch, puteti folosi o instructiune de tipul System.out.println(e+" la linia '"+line+ "'");
+Pentru citirea inputului, metodele split si trim din clasa String se pot dovedi utile.
+Input 1:
+CV: John Doe
+Internship: Google, AI
+Concurs: ICPC, 100, 10
+Proiect: Chatbot, AI
+CV: Jane Smith
+Internship: Amazon, Cloud
+Concurs: Hackathon, 50, 1
+Concurs: ICPC, 100, 8
+Proiect: E-commerce, Cloud
+CV: Bob Brown
+Concurs: ICPC, 100, 50
+Proiect: Portfolio, Web
+CV: Alice Johnson
+Internship: Microsoft, Data Science
+Concurs: CodeJam, 200, 5
+Proiect: AI Assistant, AI
+
+Output 1:
+"
+
+Concursuri: ICPC, CodeJam, Hackathon
+Tehnologii: AI, Cloud, Data Science, Web
+Achievers: Alice Johnson, Jane Smith, John Doe
+
+"
+
+Input 2:
+CV: Alice Johnson
+Internship: Google, Machine Learning
+Internship: Microsoft, Cloud
+CV: Bob Brown
+Internship: Amazon, Machine Learning
+CV: Carol White
+Internship: Facebook, Security
+
+Output 2:
+"
+
+Concursuri:
+Tehnologii: Machine Learning, Cloud, Security
+Achievers:
+
+"
+
+Input 3:
+CV: David Smith
+Concurs: CodeFest, 100, 50
+CV: Emma Davis
+Concurs: Hackathon, 200, 100
+CV: Frank Moore
+Concurs: DataChallenge, 150, 75
+
+Output 3:
+"
+
+Concursuri: CodeFest, DataChallenge, Hackaton
+Tehnologii:
+Achievers:
+
+"
+
+Input 4:
+CV: George Green
+Proiect: WeatherApp, Java
+CV: Helen Black
+Proiect: Chatbot, Python
+CV: Ian White
+Proiect: E-commerceSystem, JavaScript
+
+Output 4:
+"
+
+Concursuri:
+Tehnologii: Java, JavaScript, Python
+Achievers:
+
+" 
+Input 5:
+CV: Jack Brown
+Concurs: AlgoContest, 100, 5
+Concurs: DataFest, 50, 3
+
+Output 5:
+"
+
+Concursuri: AlgoContest, DataFest
+Tehnologii:
+Achievers: Jack Brown
+
+"
+
+Input 6:
+CV: Alex Smith
+
+Output 6:
+"
+
+Concursuri:
+Tehnologii:
+Achievers:
+
+"
+
+Input 7:
+CV: Lucy Harris
+Concurs: CodeJam, notANumber, 3
+Internship: Google, AI
+Proiect: Chatbot, Python
+
+Output 7:
+"
+
+java.lang.NumberFormatException: For input string: "notANumber" la linia 'Concurs: CodeJam, notANumber, 3'
+Concursuri:
+Tehnologii: AI, Python
+Achievers:
+"
+
+Input 8:
+CV: Mike Carter
+Internship: Google, AI
+Contests: Hackathon, 100, 10
+Projects: Chatbot, Python
+
+Output 8:
+"
+
+java.lang.IllegalArgumentException: nume sectiune necunoscut la linia 'Contests: Hackathon, 100, 10'
+java.lang.IllegalArgumentException: nume sectiune necunoscut la linia 'Projects: Chatbot, Python'
+Concursuri:
+Tehnologii: AI
+Achievers:
+
+"
+
+Input 9:
+CV: Jack Brown
+Concurs: AlgoContest, 100
+Concurs: DataFest, 50, 3
+
+Output 9:
+"
+
+java.lang.IllegalArgumentException: numar de parametrii invalid la linia 'Concurs: AlgoContest, 100'
+Concursuri: DataFest
+Tehnologii:
+Achievers: Jack Brown
+
+"
+Input 10:
+CV: Alice Johnson
+Internship: Google, AI
+Internship: Amazon, Cloud
+Concurs: CodeJam, 100, 10
+Proiect: Chatbot, AI
+Proiect: E-commerce, Cloud
+CV: Bob Brown
+Internship: Facebook, Security
+Internship: IBM, Data Science
+Concurs: Hackathon, 150, 15
+Concurs: CodeJam, 100, 8
+Proiect: BlockchainApp, Rust
+Proiect: MachineLearning, Python
+CV: Carol White
+Concurs: DataFest, 200, 25
+Concurs: AIChallenge, 150, 20
+Proiect: DataAnalyzer, Python
+Proiect: MobileApp, Java
+CV: David Smith
+Internship: Google, AI
+Concurs: AlgoContest, 50, 5
+Proiect: SmartHome, IoT
+Proiect: Chatbot, Python
+CV: Emma Davis
+Internship: Microsoft, Cloud
+Internship: Amazon, Machine Learning
+Concurs: CodeFest, 200, 50
+Concurs: AlgoContest, 50, 3
+Proiect: WeatherApp, Java
+Proiect: SocialNetwork, Node.js
+CV: Frank Moore
+Internship: Facebook, Security
+Internship: Apple, Hardware
+Concurs: Hackathon, 300, 150
+Concurs: AIChallenge, 150, 20
+Proiect: DataAnalyzer, Python
+Proiect: BlockchainApp, Solidity
+CV: Grace Lee
+Internship: IBM, Data Science
+Internship: Amazon, AI
+Concurs: CodeFest, 200, 20
+Proiect: AIChatbot, Python
+Proiect: RecommendationEngine, Python
+CV: Helen Scott
+Internship: Google, Cloud
+Internship: Apple, Hardware
+Internship: Microsoft, Security
+Concurs: AlgoContest, 50, 6
+Concurs: Hackathon, 300, 31
+Proiect: SocialMediaApp, Kotlin
+Proiect: BlockchainSystem, Rust
+Proiect: Chatbot, Python
+Proiect: IoTSystem, JavaScript
+CV: Ian Black
+Concurs: AIChallenge, 150, 10
+Concurs: CodeJam, 100, 15
+Concurs: DataFest, 200, 50
+Proiect: E-commercePlatform, Java
+Proiect: AIModel, Python
+Proiect: ImageProcessor, C++
+CV: Jane Taylor
+Internship: Amazon, AI
+Internship: Google, Data Science
+Internship: IBM, Cloud
+Concurs: CodeFest, 200, 40
+Concurs: Hackathon, 300, 55
+Concurs: CodeJam, 200, 41
+Proiect: VoiceAssistant, Python
+Proiect: OnlineStore, JavaScript
+Proiect: FitnessTracker, Java
+Output 10:
+"
+
+Concursuri: CodeJam, Hackathon, AIChallenge, AlgoContest, CodeFest, DataFest
+Tehnologii: Python, AI, Cloud, Java, Data Science, Security, Hardware, JavaScript, Rust, C++, IoT, Kotlin, Machine Learning, Node.js, Solidity
+Achievers: Alice Johnson, Bob Brown, David Smith, Emma Davis, Grace Lee, Ian Black
+
+"

@@ -1,0 +1,7 @@
+Pornind de la functia main data, oferiti o implementare minimala de arbore binar de cautare si de iterator care va traversa arborele in preordine:
+- nu modificati metoda main
+- implementati doar metodele necesare pentru functionarea metodei main (spre exemplu, nu stergem noduri din arbore)
+- formatul inputului: pe primul rand tipul cheilor (Integer, String sau Double) apoi cheile intr-o ordine oarecare, cate una pe linie
+- formatul outputului: cheile din arbore in preordine, cate una pe linie (sau mesaje de exceptie, dupa caz, vezi metoda main)
+- la adaugarea nodurilor in arbore, cheile duplicate vor fi ignorate, arborele va contine doar chei unice
+- codul trebuie sa fie organizat astfel incat sa poata fi usor de extins (cu functionalitati noi, sau cu tipuri noi de chei)

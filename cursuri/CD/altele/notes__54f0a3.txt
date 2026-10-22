@@ -1,0 +1,8 @@
+1. Inner classes examples
+GeneratorNume, GeneratorDateDeNastere
+https://docs.oracle.com/javase/tutorial/java/javaOO/innerclasses.html
+https://www.javatpoint.com/event-handling-in-java
+2. Lambda Expressions
+3. Real world apps
+Android examples: View.OnClickListener, android.view.KeyEvent.Callback
+Arduino / Signal: https://www.upgrad.com/blog/java-open-source-projects/

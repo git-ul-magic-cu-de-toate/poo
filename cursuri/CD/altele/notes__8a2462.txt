@@ -1,0 +1,16 @@
+1. Collections Framework: 
+   * https://www3.ntu.edu.sg/home/ehchua/programming/java/J5c_Collection.html
+      - dissection
+      - auto-boxing
+      - streams and functional programming
+      - iterator vs for-loop
+      - mutable vs immutable Objects
+      - convert from array to list and from list to array
+      - List algorithms
+      - Set algorithms
+      - Unmodifiable collections
+   * <T extends Comparable <? super T> > folosind Student extends Person
+   * set.remove(Object): Long and Numbers, word on equals
+   * word on Graphs
+
+2. instanceof vs DoubleDispatch

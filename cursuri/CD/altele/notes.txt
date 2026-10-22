@@ -1,0 +1,2 @@
+compile process: C vs Java 
+procesul complet: https://www.geeksforgeeks.org/compiling-a-c-program-behind-the-scenes/)

@@ -1,0 +1,129 @@
+POO
+
+Gigel Frone - 312CC
+Cosmin Andrei - 312CC
+Ionel Dragomir - 312CC
+Florin Florea - 312CC
+Costel Busuioc - 312CC
+Sebastian Moisescu - 314CC
+Larisa Oana - 314CC
+Georgiana Calin - 314CC
+Dragos Barbu - 314CC
+Alberto Ciobanu - 314CC
+Andrei Georgescu - 312CC
+Alexandra Maria - 314CC
+
+
+
+PP
+
+Gigel Frone - 312CC
+Cosmin Andrei - 312CC
+Ionel Dragomir - 312CC
+Florin Florea - 312CC
+Costel Busuioc - 312CC
+Sebastian Moisescu - 314CC
+Larisa Oana - 314CC
+Georgiana Calin - 314CC
+Dragos Barbu - 314CC
+Alberto Ciobanu - 314CC
+Florentina Bratosin - 312CC
+Horia Ghita - 314CC
+
+
+SO
+
+Cristian Manole - 313CC
+Denisa Pavel - 313CC
+Alex Petrescu - 313CC
+Cosmin Tomulescu - 313CC
+Camelia Tunaru - 313CC
+Livia Ursu - 311CC
+Alfred Pop - 311CC
+Iulian Iancu - 311CC
+Sofia Negoita - 311CC
+Alma Dobrica - 311CC
+Cornel Cosma - 313CC
+Alma Toma - 311CC
+
+
+ED
+
+Cristian Manole - 313CC
+Denisa Pavel - 313CC
+Alex Petrescu - 313CC
+Cosmin Tomulescu - 313CC
+Camelia Tunaru - 313CC
+Livia Ursu - 311CC
+Alfred Pop - 311CC
+Iulian Iancu - 311CC
+Sofia Negoita - 311CC
+Alma Dobrica - 311CC
+Emilian Voinea - 313CC
+Adrian Sava - 311CC
+
+POO
+"type": "FullCourse"
+"strategy": "BestPartialScore"
+teacher : Ion Mihalache
+assistants: Alexandra Maria - 314CC
+            Andrei Georgescu - 312CC
+
+PP
+"type": "FullCourse"
+"strategy": "BestExamScore"
+teacher : Sonia Lupu
+assistants: Florentina Bratosin - 312CC
+            Horia Ghita - 314CC
+
+ED
+"type": "PartialCourse",
+"strategy": "BestTotalScore"
+teacher : George Dinu
+assistants: Adrian Sava - 311CC
+            Emilian Voinea - 313CC
+
+SO
+"type": "FullCourse"
+"strategy": "BestPartialScore"
+teacher : Razvan Calinescu
+assistants: Alma Toma - 311CC
+            Cornel Cosma - 313CC
+
+POO
+312CC
+Andrei Georgescu
+314CC
+Alexandra Maria
+
+PP
+312CC
+Florentina Bratosin
+314CC
+Horia Ghita
+
+ED
+311CC
+Adrian Sava
+313CC
+Emilian Voinea
+
+SO
+311CC
+Alma Toma
+313CC
+Cornel Cosma
+
+
+
+
+
+
+
+
+
+
+
+
+
+
